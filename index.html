@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Your CSS Styles Here */
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#protfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX</p>
+                <h1>Hi, I'm <span>Anmol</span><br>Kayastha from Nepal</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="resized image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A paragraph is a group of sentences about a single topic. It should have a clear topic sentence and supporting sentences that provide evidence or examples. Paragraphs help to organize writing and make it easier to read. A paragraph is a group of sentences about a single topic. It should have a clear topic sentence and supporting sentences that provide evidence or examples. Paragraphs help to organize writing and make it easier to read.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/App interface</li>
+                            <li><span>Web Development</span><br>Web Development</li>
+                            <li><span>App Development</span><br>Building Android/Ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2019 - current</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2019 - 2021</span><br>Team lead at starApp LLC.</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital ltd.</li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018</span><br>SEE Exam</li>
+                            <li><span>2020</span><br>+2 higher</li>
+                            <li><span>2025</span><br>Bachelor</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div class="service-item">
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Crafting visually appealing and user-friendly websites.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Designing intuitive and engaging user interfaces.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2>App Development</h2>
+                    <p>Building cross-platform mobile applications.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="service-item">
+                <i class="fas fa-pencil-ruler"></i>
+                    <h2>Graphic Design</h2>
+                    <p>Creating stunning visuals for branding and marketing.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- protfolio -->
+    <div id="protfolio">
+        <div class="container">
+            <h1 class="sub-title"> My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>A platform for connecting with friends and sharing updates. Features include user profiles, posts, and messaging</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App </h3>
+                        <p>A platform for connecting with friends and sharing updates. Features include user profiles, posts, and messaging</p>
+                    <a href="#" ><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online shop App</h3>
+                        <p>A platform for connecting with friends and sharing updates. Features include user profiles, posts, and messaging</p>
+                    <ahref="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+
+    </div>
+    <!-- Contact -->
+     <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                      <h1 class="sub-title">Contact me</h1>
+                      <p><i class="fas fa-paper-plane"></i>Kayasthanmol@gmail.com</p>
+                      <p><i class="fas fa-phone-square"></i>98638416757</p>
+                      <div class="social-icons">
+                        <a href="https://facebook.com/"  aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/"  aria-label="Twitter"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://instagram.com/"  aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/"  aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/anmol cv .pdf" download class="btn btn2">Download My cv</a>
+                   </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="your email"required>
+                        <textarea name="Message" rows="6"placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn2"> submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @kevin. made with <i class="fas fa-heart"></i>by Anmol Kayastha </p>
+        </div>
+     </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
